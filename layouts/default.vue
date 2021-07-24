@@ -1,5 +1,10 @@
 <template>
-  <h1>hello</h1>
+  <div class="main">
+    <Header/>
+    <div class="container">
+      <nuxt/>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -43,5 +48,6 @@ export default {
 
   .container {
     width: 100%;
+    margin-top: 5rem;
   }
 </style>

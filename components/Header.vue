@@ -1,11 +1,11 @@
 <template>
   <header>
-    <div class="logo">
+    <nuxt-link to="/" class="logo">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.775 17c1.164-3.451 6.225-6.519 6.225-17h-16c0 10.481 5.061 13.549 6.225 17h3.55zm-5.192-15c.012 4.066.877 8.291 3.058 11.952-2.723-3.055-4.786-6.732-5.023-11.952h1.965zm8.417 20.449v1.551h-10v-1.551c2.552 0 3.298-2.061 3.411-3.449h3.179c.112 1.389.785 3.449 3.41 3.449z"/></svg>
       </div>
       <h1>FBScores</h1>
-    </div>
+    </nuxt-link>
     <div class="search">
       <button @click="() => {console.log('hi')}">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"/></svg>
@@ -13,6 +13,9 @@
       <input type="text" placeholder="Search"/>
     </div>
     <ul class="links">
+      <li>
+        <nuxt-link class="link" to="/live">Live</nuxt-link>
+      </li>
       <li>
         <nuxt-link class="link" to="/">Matches</nuxt-link>
       </li>
@@ -56,6 +59,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    user-select: none;
   }
 
   .logo div svg {
