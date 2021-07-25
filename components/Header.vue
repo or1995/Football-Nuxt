@@ -26,7 +26,7 @@
       </li>
       <li class="splitter"></li>
       <li>
-        <nuxt-link class="link" to="/">Leagues</nuxt-link>
+        <nuxt-link class="link" to="/leagues">Leagues</nuxt-link>
       </li>
       <li class="splitter"></li>
       <li>

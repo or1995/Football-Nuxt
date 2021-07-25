@@ -25,6 +25,8 @@ export default {
     --primary-color: #DB2B39;
     --primary-light-color: #da4a56;
     --secondary-color: #F3A712;
+    --blue-lighter: #3e4872;
+    --blue-light: #36416d;
     --blue: #29335C;
     --blue-two: #242e57;
     --champ: #F0CEA0;
