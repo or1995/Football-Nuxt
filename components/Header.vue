@@ -16,15 +16,19 @@
       <li>
         <nuxt-link class="link" to="/live">Live</nuxt-link>
       </li>
+      <li class="splitter"></li>
       <li>
         <nuxt-link class="link" to="/">Matches</nuxt-link>
       </li>
+      <li class="splitter"></li>
       <li>
         <nuxt-link class="link" to="/">Teams</nuxt-link>
       </li>
+      <li class="splitter"></li>
       <li>
         <nuxt-link class="link" to="/">Leagues</nuxt-link>
       </li>
+      <li class="splitter"></li>
       <li>
         <nuxt-link class="link" to="/">Cups</nuxt-link>
       </li>
@@ -53,6 +57,8 @@ export default {
     justify-content: space-between;
     padding: 0 2rem;
     background-color: var(--primary-color);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.15);
+    z-index: 100000;
   }
 
   .logo {
@@ -64,7 +70,7 @@ export default {
   }
 
   .logo div svg {
-    fill: var(--secondary-color);
+    fill: #fff;
     height: 2rem;
     width: 2rem;
   }
@@ -78,7 +84,8 @@ export default {
   }
 
   .logo h1 {
-    color: var(--very-light-color);
+    color: #fff;
+    font-weight: 400;
   }
 
   .search {
@@ -100,7 +107,7 @@ export default {
   }
 
   .search input::placeholder {
-    color: var(--light-color);
+    color: #fff;
   }
 
   .search button {
@@ -115,7 +122,7 @@ export default {
   }
 
   .search button svg {
-    fill: var(--light-color);
+    fill: #fff;
     height: 1.3rem;
     width: 1.3rem;
   }
@@ -128,13 +135,19 @@ export default {
     gap: 1rem;
   }
 
+  .splitter {
+    height: 1.5rem;
+    width: 2px;
+    background-color: var(--champ);
+  }
+
   .link {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
-    color: var(--very-light-color);
+    color: #fff;
   }
 
   .link:hover {
-    color: var(--secondary-color);
+    color: var(--champ);
   }
 </style>

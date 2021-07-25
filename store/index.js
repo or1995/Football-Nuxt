@@ -26,8 +26,7 @@ export const actions = {
         }
         axios.get('https://sportscore1.p.rapidapi.com/sports/1/events/live', config)
         .then(res => {
-            console.log(res.data);
-            context.commit('setLive', res.data);
+            context.commit('setLive', res.data.data);
         })
     }
 }
